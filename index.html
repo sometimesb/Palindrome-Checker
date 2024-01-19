@@ -7,15 +7,27 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="box">
-    <div class="img">
-      <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="">
+  <form action="">
+    <div class="box">
+      <div class="img">
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="">
+      </div>
+      <div class="title">
+        <h1>Is it a Palindrome?</h1>
+      </div>
+      <div class="check-text">
+        <p>Enter in text to check for a palindrome:</p>
+        <div class="submit-container">
+          <input type="text" id="text-input" name="">
+          <button type="button" id="check-btn">Check</button>
+          <div id="result"></div>
+        </div>
+      </div>
+      <div class="info">
+        <p>A <i>palindrome</i> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+      </div>
     </div>
-    <div class="title">
-      <h1>Is it a Palindrome?</h1>
-    </div>
-    <div class="check-text"></div>
-    <div class="info"></div>
-  </div>
+  </form>
+  <script src="./script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 *{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,7 +21,9 @@ body {
 }
 
 .box {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 600px;
   width: 500px;
   border-radius: 5px;
@@ -29,44 +31,79 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img{
+img {
   height: 30px;
-  position: absolute;
-  top: 75px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 45px; 
 }
 
-.title{
-  position: absolute;
+.title {
   font-size: 18px;
   width: 400px;
-  top: 150px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 30px; 
   color: var(--check-color);
   text-align: center;
 }
 
 .check-text {
-  position: absolute;
-  height: 119px;
   width: 400px;
   background-color: var(--check-color);
-  top: 250px;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: 10px;
   box-shadow: 0 6px 6px #002ead;
+  margin-top: 50px; 
 }
 
 .info {
-  position: absolute;
-  bottom: 75px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 50px; 
   height: 125px;
   width: 400px;
   background-color: var(--info-color);
   border-radius: 10px;
+}
+
+.check-text p{
+  display:block;
+  text-align: center;
+  font-family: inherit;
+  font-size:16px;
+  margin-top: 15px;
+}
+
+.submit-container{
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom:2px solid #5a01a7;
+  padding: 5px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+button{
+  background-color: #5a01a7;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 90px;
+  border: none;
+}
+
+.info p{
+  color: white;
+  height: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+
+.first-word{
+  font-weight: bold;
+}
+
+#result{
+  margin-top: 5px;
 }
